@@ -46,14 +46,13 @@ if(newBook.title() && newBook.author()){
    </form>
   </div>
   <div className="bookCardsDiv">
-    {books.map((book, index)=>(
-        <div key={index} className="bookCard">
+    {books.map((book)=>(
+        <div key={book.title} className="bookCard">
             <h4>{book.title}</h4>
             <p>by{book.author}</p>
-            <div>
-    ))}
+            </div>
+    ))};
     </div>
 </div>
-  );
-
+  )};
   export default Bookshelf;
